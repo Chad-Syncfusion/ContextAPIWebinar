@@ -16,12 +16,12 @@ import {
 import {Inject} from "@syncfusion/ej2-react-grids";
 
 export function Chart1() {
-    const { fruitsVal, setFruitsVal } = useContext(FruitContext);
+    const {fruitsVal} = useContext(FruitContext);
     return (
     <>
       <br />
-        <div style={{border:'1px solid black', width:'90%'}}>
-      <label>Chart Component</label>
+        <div style={{border:'1px solid black', marginLeft:'100px'}}>
+      <h2>Chart Component</h2>
       <br />
 
       <ChartComponent
@@ -37,13 +37,13 @@ export function Chart1() {
           majorTickLines: { width: 0 },
         }}
         primaryYAxis={{
-          title: "Medal Count",
+          title: "Fruit Count",
           majorTickLines: { width: 0 },
           lineStyle: { width: 0 },
         }}
         chartArea={{ border: { width: 0 } }}
-        width={"75%"}
-        title="Olympic Medal Counts - RIO"
+        width={"100%"}
+        title="Fuit basket details"
       >
         <Inject
           services={[

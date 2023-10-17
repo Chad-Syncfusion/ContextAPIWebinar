@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { FruitContext } from "./Contexts/FruitContext";
 import { fruits } from "./Data/Fruits";
 import { App } from "./App";
-import {SomeText} from "./SimpleThing";
+import {SomeText} from "./OtherComponents/SimpleThing";
 import { registerLicense } from "@syncfusion/ej2-base";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,6 +16,7 @@ registerLicense(
 
 root.render(  
     <>
+        <h1>Main app</h1>
     <SomeText/>
     <App/>
     </>

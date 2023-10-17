@@ -8,16 +8,15 @@ import {Grid1} from "../SyncfusionStuff/Grid";
 import {fruits} from "../Data/Fruits";
 
 export function FruitBasket() {
-    const { fruitsVal, setFruitsVal } = useContext(FruitContext);
+    const { fruitsVal } = useContext(FruitContext);
         
   return (
      
     <>
       <br />
-        <div style={{border:'1px solid black', width:'90%'}}>
-      <label>Fruit Basket component</label>
-      <br />
-      <h1>Fruit Basket ({fruitsVal.length})</h1>
+        <div style={{border:'1px solid black'}}>
+      <h2>Fruit Basket component</h2>
+      <h1>Fruit Basket Item Count: {fruitsVal.length}</h1>
       <ul>
         {fruitsVal.map((fruit) => (
           <li key={fruit.name}>
@@ -26,6 +25,7 @@ export function FruitBasket() {
         ))}
       </ul>
         </div>
+        <br/>
     </>
      
   );

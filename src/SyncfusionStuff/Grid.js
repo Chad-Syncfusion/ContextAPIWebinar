@@ -31,8 +31,8 @@ export function Grid1() {
   return (
     <>
       <br />
-      <div style={{border:'1px solid black', width:'90%'}}>
-      <label>Grid component</label>
+      <div style={{border:'1px solid black', width:'90%', marginLeft:'100px'}}>
+      <h2>Grid component</h2>
       <br />     
 
       <GridComponent
@@ -54,7 +54,7 @@ export function Grid1() {
         </ColumnsDirective>
         <Inject services={[Toolbar, Edit]} />
       </GridComponent>
-      </div>
+      </div>        
     </>
   );
 }
